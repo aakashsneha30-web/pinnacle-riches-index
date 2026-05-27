@@ -164,7 +164,7 @@ export const teenAndChild: Billionaire[] = [
 export const adultBillionaires: Billionaire[] = [
   {
     rank: 1, name: "Elon Musk", title: "CEO, Tesla & SpaceX", age: 54, country: "United States",
-    netWorth: "$419B", netWorthNumeric: 419, company: "Tesla, SpaceX, xAI", ticker: "TSLA",
+    netWorth: "$728B", netWorthNumeric: 728, company: "Tesla, SpaceX, xAI", ticker: "TSLA",
     pricePerShare: "$348", sharesOwned: "411M",
     stakes: [
       { company: "Tesla", percent: "~13%" },
@@ -176,7 +176,7 @@ export const adultBillionaires: Billionaire[] = [
     verifiedBy: "Net worth figures referenced from Forbes Real-Time Billionaires",
     verifiedTier: "forbes",
     source: "Forbes — Real-Time Billionaires",
-    graphSeed: 250, graphTrend: 0.9,
+    graphSeed: 420, graphTrend: 1.2,
   },
   {
     rank: 2, name: "Bernard Arnault", title: "Chairman & CEO, LVMH", age: 76, country: "France",
