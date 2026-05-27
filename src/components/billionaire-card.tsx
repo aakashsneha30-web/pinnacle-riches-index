@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Area, AreaChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import {
   BadgeCheck, Building2, TrendingUp, Share2, Mail, MessageSquare, Linkedin,
@@ -64,7 +64,7 @@ function ShareMenu({ b, onClose }: { b: Billionaire; onClose: () => void }) {
 
 function MagazineModal({ b, onClose }: { b: Billionaire; onClose: () => void }) {
   const [loading, setLoading] = useState(true);
-  setTimeout(() => setLoading(false), 1400);
+  useEffect(() => { const t = setTimeout(() => setLoading(false), 1200); return () => clearTimeout(t); }, []);
   return (
     <div className="fixed inset-0 z-50 grid place-items-center bg-black/80 p-4" onClick={onClose}>
       <div className="w-full max-w-2xl rounded-2xl border-gold hairline bg-card p-6 shadow-luxe" onClick={(e) => e.stopPropagation()}>
