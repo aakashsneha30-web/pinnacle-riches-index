@@ -86,7 +86,6 @@ function Index() {
           </div>
         </div>
       </header>
-      </header>
 
       {/* TICKER MARQUEE */}
       <Marquee />
