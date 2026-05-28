@@ -80,7 +80,7 @@ export default function GoldParticles() {
     <canvas
       ref={canvasRef}
       className="pointer-events-none fixed inset-0 z-0"
-      style={{ mixBlendMode: "screen", opacity: 0.65 }}
+      style={{ mixBlendMode: "screen", opacity: "calc(0.65 * var(--luxury, 0.75))" }}
     />
   );
 }

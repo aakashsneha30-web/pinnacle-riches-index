@@ -4,8 +4,8 @@ import { Crown, Globe2, ShieldCheck, Sparkles, TrendingUp, Diamond, Gem } from "
 import { ApiBlock, BillionaireCard } from "@/components/billionaire-card";
 import { adultBillionaires, teenAndChild } from "@/lib/billionaires";
 import GoldParticles from "@/components/gold-particles";
-
-export const Route = createFileRoute("/")({
+import { LuxurySlider } from "@/components/luxury-slider";
+import { LiveMarket } from "@/components/live-market";
   head: () => ({
     meta: [
       { title: "The Pinnacle Global & Billionaires Index (Live)" },
