@@ -67,20 +67,25 @@ function Index() {
               <div className="text-[10px] uppercase tracking-[0.25em] text-muted-foreground">Global & Billionaires Index</div>
             </div>
           </div>
-          <nav className="hidden gap-8 text-sm text-muted-foreground md:flex">
+          <nav className="hidden gap-8 text-sm text-muted-foreground lg:flex">
             <a href="#global" className="transition hover:text-gold hover:glow-text">Global</a>
             <a href="#teen" className="transition hover:text-gold hover:glow-text">Teen & Child</a>
+            <a href="#market" className="transition hover:text-gold hover:glow-text">Live Market</a>
             <a href="#api" className="transition hover:text-gold hover:glow-text">API</a>
             <a href="#verification" className="transition hover:text-gold hover:glow-text">Verification</a>
           </nav>
-          <div className="flex items-center gap-2 rounded-full border-shimmer glass-luxe px-3 py-1.5 text-xs">
-            <span className="relative flex size-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[oklch(0.78_0.16_140)] opacity-75" />
-              <span className="relative inline-flex size-2 rounded-full bg-[oklch(0.78_0.16_140)]" />
-            </span>
-            Live
+          <div className="flex items-center gap-3">
+            <LuxurySlider />
+            <div className="flex items-center gap-2 rounded-full border-shimmer glass-luxe px-3 py-1.5 text-xs">
+              <span className="relative flex size-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[oklch(0.78_0.16_140)] opacity-75" />
+                <span className="relative inline-flex size-2 rounded-full bg-[oklch(0.78_0.16_140)]" />
+              </span>
+              Live
+            </div>
           </div>
         </div>
+      </header>
       </header>
 
       {/* TICKER MARQUEE */}
