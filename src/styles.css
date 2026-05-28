@@ -48,6 +48,10 @@
 }
 
 :root {
+  --luxury: 0.75;
+  --luxury-blur: 21px;
+  --luxury-glow: 0.9;
+  --luxury-saturate: 1.25;
   --radius: 0.5rem;
   --background: oklch(0.09 0.015 80);
   --foreground: oklch(0.96 0.02 85);
@@ -167,13 +171,15 @@
   }
 
   .glass-luxe {
-    background: oklch(0.14 0.02 80 / 0.45);
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
-    border: 1px solid oklch(0.85 0.14 85 / 12%);
+    background: oklch(0.14 0.02 80 / calc(0.25 + 0.35 * var(--luxury, 0.75)));
+    backdrop-filter: blur(var(--luxury-blur, 21px)) saturate(var(--luxury-saturate, 1.25));
+    -webkit-backdrop-filter: blur(var(--luxury-blur, 21px)) saturate(var(--luxury-saturate, 1.25));
+    border: 1px solid oklch(0.85 0.14 85 / calc(0.06 + 0.14 * var(--luxury, 0.75)));
   }
 
   .glow-text {
-    text-shadow: 0 0 20px oklch(0.85 0.14 85 / 0.35), 0 0 40px oklch(0.85 0.14 85 / 0.15);
+    text-shadow:
+      0 0 calc(20px * var(--luxury-glow, 0.9)) oklch(0.85 0.14 85 / calc(0.35 * var(--luxury, 0.75))),
+      0 0 calc(40px * var(--luxury-glow, 0.9)) oklch(0.85 0.14 85 / calc(0.15 * var(--luxury, 0.75)));
   }
 }
