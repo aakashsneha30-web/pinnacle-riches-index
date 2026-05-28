@@ -6,6 +6,8 @@ import { adultBillionaires, teenAndChild } from "@/lib/billionaires";
 import GoldParticles from "@/components/gold-particles";
 import { LuxurySlider } from "@/components/luxury-slider";
 import { LiveMarket } from "@/components/live-market";
+
+export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "The Pinnacle Global & Billionaires Index (Live)" },
