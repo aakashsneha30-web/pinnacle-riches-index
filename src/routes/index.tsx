@@ -150,6 +150,10 @@ function Index() {
         </div>
       </section>
 
+      {/* LIVE MARKET */}
+      <LiveMarket all={[...teenAndChild, ...adultBillionaires]} />
+
+
       {/* VERIFICATION */}
       <section id="verification" className="relative mx-auto max-w-5xl px-6 py-20">
         <div className="rounded-3xl border-shimmer glass-luxe p-10 shadow-luxe backdrop-blur-2xl">
