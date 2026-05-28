@@ -48,6 +48,10 @@
 }
 
 :root {
+  --luxury: 0.75;
+  --luxury-blur: 21px;
+  --luxury-glow: 0.9;
+  --luxury-saturate: 1.25;
   --radius: 0.5rem;
   --background: oklch(0.09 0.015 80);
   --foreground: oklch(0.96 0.02 85);
